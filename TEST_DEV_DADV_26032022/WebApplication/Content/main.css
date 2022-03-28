@@ -1,0 +1,43 @@
+﻿* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.nav {
+    z-index: 1;
+}
+
+input:invalid:focus {
+    border: 2px dashed red;
+}
+
+.form-login {
+    width: 45%;
+    text-align: center;
+    margin: auto;
+    margin-top: 50px;
+    color: black;
+    z-index: 1;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 1em;
+    opacity: .80;
+    position: relative;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+.boxes-collection {
+    width: 97%;
+    margin: auto;
+}
+
+.form-login div input {
+    margin-top: 10px;
+}
+
+@media (max-width: 720px) {
+    .form-login {
+        width: 90%;
+    }
+}

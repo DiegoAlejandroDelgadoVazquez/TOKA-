@@ -1,0 +1,175 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<br />
+<div class="row">
+    <div class="col-md-12">
+        <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#mdlCreate" onclick="Clear()">Crear</button>
+    </div>
+</div>
+
+<br />
+
+<div class="row">
+    <div class="col-md-12">
+        <table id="tblPersonaFisica" style="width:100%;">
+            <thead>
+                <tr>
+                    <th></th>
+                    <th>Id</th>
+                    <th>Fecha de Nacimiento</th>
+                    <th>Nombre</th>
+                    <th>Apellido Paterno</th>
+                    <th>Apellido Materno</th>
+                    <th>RFC</th>
+                    <th>Registro</th>
+                    <th>Actualización</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+    </div>
+</div>
+
+<!-- crear nueva persona fisica modal  -->
+<form id="frmPost">
+    <div class="modal fade" id="mdlCreate" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="staticBackdropLabel">Persona Fisica - Crear</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <input id="txtNombre" type="text" class="form-control" placeholder="Nombre..." required />
+                        </div>
+                    </div>
+                    <br />
+
+                    <div class="row">
+                        <div class="col-md-12">
+                            <input id="txtApellidoPaterno" type="text" class="form-control" placeholder="Apellido Paterno..." required />
+                        </div>
+                    </div>
+                    <br />
+
+                    <div class="row">
+                        <div class="col-md-12">
+                            <input id="txtApellidoMaterno" type="text" class="form-control" placeholder="Apellido Materno..." required />
+                        </div>
+                    </div>
+                    <br />
+
+                    <div class="row">
+                        <div class="col-md-12">
+                            <input id="txtRFC" type="text" class="form-control" placeholder="RFC 13 Caracteres..." required minlength="13" maxlength="13" />
+                        </div>
+                    </div>
+                    <br />
+
+                    <div class="row">
+                        <div class="col-md-12">
+                            <input id="txtFechaNacimiento" type="date" class="form-control" placeholder="Fecha de Nacimiento..." required />
+                        </div>
+                    </div>
+                    <br />
+                    <div class="row">
+                        <div class="col-md-12">
+                            <input id="txtUsuarioAgrega" type="number" class="form-control" placeholder="Usuario Agrega" required />
+                        </div>
+                    </div>
+                    <br />
+                </div>
+                <div class="modal-footer">
+                    <button id="btnCancelarCrear" type="button" class="btn btn-danger" data-bs-dismiss="modal">Cancelar</button>
+                    <button type="submit" class="btn btn-primary">Crear</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</form>
+
+<!-- crear nueva persona fisica modal  -->
+<button id="btnModalEdit" type="button" data-bs-toggle="modal" data-bs-target="#mdlEdit" hidden></button>
+<form id="frmPut">
+    <div class="modal fade" id="mdlEdit" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="staticBackdropLabel">Persona Fisica - Editar</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <input id="txtIdPersonaFisica" type="number" class="form-control" required readonly />
+                        </div>
+                    </div>
+                    <br />
+
+                    <div class="row">
+                        <div class="col-md-12">
+                            <input id="txtNombreF" type="text" class="form-control" placeholder="Nombre..." required />
+                        </div>
+                    </div>
+                    <br />
+
+                    <div class="row">
+                        <div class="col-md-12">
+                            <input id="txtApellidoPaternoF" type="text" class="form-control" placeholder="Apellido Paterno..." required />
+                        </div>
+                    </div>
+                    <br />
+
+                    <div class="row">
+                        <div class="col-md-12">
+                            <input id="txtApellidoMaternoF" type="text" class="form-control" placeholder="Apellido Materno..." required />
+                        </div>
+                    </div>
+                    <br />
+
+                    <div class="row">
+                        <div class="col-md-12">
+                            <input id="txtRFCF" type="text" class="form-control" placeholder="RFC 13 Caracteres..." required minlength="13" maxlength="13" />
+                        </div>
+                    </div>
+                    <br />
+
+                    <div class="row">
+                        <div class="col-md-12">
+                            <input id="txtFechaNacimientoF" type="date" class="form-control" placeholder="Fecha de Nacimiento..." required />
+                        </div>
+                    </div>
+                    <br />
+                    <div class="row">
+                        <div class="col-md-12">
+                            <input id="txtUsuarioAgregaF" type="number" class="form-control" placeholder="Usuario Agrega" required />
+                        </div>
+                    </div>
+                    <br />
+                </div>
+                <div class="modal-footer">
+                    <button id="btnCancelarEditar" type="button" class="btn btn-danger" data-bs-dismiss="modal">Cancelar</button>
+                    <button type="submit" class="btn btn-primary">Editar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</form>
+
+@*genera las url de las acciones utilizadas en el script principal*@
+<script>
+    const urlGet = "@Url.Action("Get", "PersonaFisica")";
+    const urlGetById = "@Url.Action("GetById", "PersonaFisica")";
+    const urlPost = "@Url.Action("Post", "PersonaFisica")";
+    const urlPut = "@Url.Action("Put", "PersonaFisica")";
+    const urlDelete = "@Url.Action("Delete", "PersonaFisica")";
+</script>
+<script src="~/Scripts/ASP/PersonaFisica/PersonaFisicaModel.js"></script>
+<script src="~/Scripts/ASP/PersonaFisica/Index.js"></script>
+

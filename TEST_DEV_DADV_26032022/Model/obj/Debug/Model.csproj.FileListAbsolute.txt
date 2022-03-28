@@ -1,0 +1,6 @@
+C:\Users\OMAR\Desktop\Diego Practicas\TEST_DEV_DADV_26032022\Model\bin\Debug\Model.dll
+C:\Users\OMAR\Desktop\Diego Practicas\TEST_DEV_DADV_26032022\Model\bin\Debug\Model.pdb
+C:\Users\OMAR\Desktop\Diego Practicas\TEST_DEV_DADV_26032022\Model\obj\Debug\Model.csprojAssemblyReference.cache
+C:\Users\OMAR\Desktop\Diego Practicas\TEST_DEV_DADV_26032022\Model\obj\Debug\Model.csproj.CoreCompileInputs.cache
+C:\Users\OMAR\Desktop\Diego Practicas\TEST_DEV_DADV_26032022\Model\obj\Debug\Model.dll
+C:\Users\OMAR\Desktop\Diego Practicas\TEST_DEV_DADV_26032022\Model\obj\Debug\Model.pdb

@@ -1,0 +1,34 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+    <form class="form-login">
+        <div class="col-md-12 boxes-collection">
+            <h3>Login</h3>
+            <br />
+            <div class="col-md-12">
+                <input name="UserName" id="txtUser" type="text" class="form-control" placeholder="Usuario.." required />
+                <div id="UA"></div>
+            </div>
+            <br />
+            <div class="col-md-12">
+                <input name="Password" id="txtPassword" type="password" class="form-control" placeholder="Contraseña.." required />
+                <div id="PA"></div>
+            </div>
+            <br />
+            <div class="col-md-12">
+                <input id="btnLogin" type="submit" class="btn btn-success" value="Entrar" />
+            </div>
+            <br />
+            <div class="col-md-12" style="text-align:left;">
+                ¿Aun no estás registrado?, <a href="/Login/SignIn">Registrate</a>
+            </div>
+        </div>
+    </form>
+
+        
+
+
+
+

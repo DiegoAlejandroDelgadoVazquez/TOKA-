@@ -1,0 +1,11 @@
+C:\Users\OMAR\Desktop\Diego Practicas\TEST_DEV_DADV_26032022\ServiceClient\bin\Debug\ServiceClient.dll
+C:\Users\OMAR\Desktop\Diego Practicas\TEST_DEV_DADV_26032022\ServiceClient\bin\Debug\ServiceClient.pdb
+C:\Users\OMAR\Desktop\Diego Practicas\TEST_DEV_DADV_26032022\ServiceClient\bin\Debug\Model.dll
+C:\Users\OMAR\Desktop\Diego Practicas\TEST_DEV_DADV_26032022\ServiceClient\bin\Debug\Newtonsoft.Json.dll
+C:\Users\OMAR\Desktop\Diego Practicas\TEST_DEV_DADV_26032022\ServiceClient\bin\Debug\Model.pdb
+C:\Users\OMAR\Desktop\Diego Practicas\TEST_DEV_DADV_26032022\ServiceClient\bin\Debug\Newtonsoft.Json.xml
+C:\Users\OMAR\Desktop\Diego Practicas\TEST_DEV_DADV_26032022\ServiceClient\obj\Debug\ServiceClient.csprojAssemblyReference.cache
+C:\Users\OMAR\Desktop\Diego Practicas\TEST_DEV_DADV_26032022\ServiceClient\obj\Debug\ServiceClient.csproj.CoreCompileInputs.cache
+C:\Users\OMAR\Desktop\Diego Practicas\TEST_DEV_DADV_26032022\ServiceClient\obj\Debug\ServiceClient.csproj.CopyComplete
+C:\Users\OMAR\Desktop\Diego Practicas\TEST_DEV_DADV_26032022\ServiceClient\obj\Debug\ServiceClient.dll
+C:\Users\OMAR\Desktop\Diego Practicas\TEST_DEV_DADV_26032022\ServiceClient\obj\Debug\ServiceClient.pdb
